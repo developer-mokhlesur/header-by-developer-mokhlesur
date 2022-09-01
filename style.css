@@ -1,0 +1,120 @@
+/* Universal CSS Start */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Universal CSS End */
+/* Fixed-Width CSS Start */
+.fixed-width{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+/* Fixed-Width CSS End */
+/* Header CSS Start*/
+header{
+    box-shadow: 0px 0px 25px 1px rgba(98,120,223,0.67);
+    position: sticky;
+    top: 0;
+}
+header .logo {
+    width: 15%;
+}
+header .logo img{
+    max-width: 65%;
+}
+header ul{
+    width: 65%;
+    text-align: center;
+}
+header ul li{
+    display: inline-block;
+    position: relative;
+   
+}
+header ul li a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 30px 0px;
+    color: black !important;
+    transition: all 0.6s;
+    position: relative;
+}
+header ul li:hover >a{
+    color: #6278df !important;
+}
+header ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 28px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #6278df;
+    transition: all 0.6s;
+}
+header ul li a:hover::after{
+    width: 100%;
+}
+/* DropDown CSS Start */
+header ul li ul{
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    padding: 0;
+    border-top: 1px solid #ddd;
+    opacity: 0;
+    visibility: hidden;
+    transition:all 0.6s;
+}
+header ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+header ul li ul li{
+    display: block;
+}
+header ul li ul li a {
+    display: block;
+    margin: 0;
+    padding: 13px 0;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+header ul li ul li a::after{
+    content: "";
+    position: 0;
+    top: 0;
+    left: 0;
+    width: 0;
+    background: transparent;
+}
+/* DropDown CSS End */
+header .button{
+    width: 12%;
+    text-align: end;
+}
+header .button button {
+    display: inline-block;
+    border: none;
+    padding: 10px 30px;
+    background: #fff;
+    border: 2px solid #6278df;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #6278df;
+    transition: all 0.6s;
+}
+header .button button:hover{
+    border: 2px solid transparent;
+    background: #6278df;
+    color: #fff;
+    box-shadow: 0px 0px 25px 1px rgba(98,120,223,0.67);
+}  
+/* Header CSS End*/
