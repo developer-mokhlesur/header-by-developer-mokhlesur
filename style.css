@@ -6,7 +6,7 @@
 /* Universal CSS End */
 /* Fixed-Width CSS Start */
 .fixed-width{
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 /* Fixed-Width CSS End */
@@ -15,12 +15,15 @@ header{
     box-shadow: 0px 0px 25px 1px rgba(98,120,223,0.67);
     position: sticky;
     top: 0;
+    z-index: 99999;
+    background: #fff;
 }
 header .logo {
     width: 15%;
 }
-header .logo img{
+header .logo img {
     max-width: 65%;
+    margin: 0 15px;
 }
 header ul{
     width: 65%;
@@ -37,7 +40,7 @@ header ul li a {
     margin: 0 20px;
     font-size: 18px;
     font-weight: 600;
-    padding: 30px 0px;
+    padding: 25px 0px;
     color: black !important;
     transition: all 0.6s;
     position: relative;
@@ -49,7 +52,7 @@ header ul li a::after {
     content: "";
     position: absolute;
     bottom: 28px;
-    left: 0;
+    right: 0;
     width: 0;
     height: 2px;
     background: #6278df;
@@ -57,13 +60,14 @@ header ul li a::after {
 }
 header ul li a:hover::after{
     width: 100%;
+    left: 0;
 }
 /* DropDown CSS Start */
 header ul li ul{
     position: absolute;
     top: 120%;
     left: 0;
-    width: 200px;
+    width: 230px;
     background: #fff;
     padding: 0;
     border-top: 1px solid #ddd;
@@ -88,10 +92,11 @@ header ul li ul li a {
 }
 header ul li ul li a::after{
     content: "";
-    position: 0;
+    position: absolute;
     top: 0;
-    left: 0;
+    right:0;
     width: 0;
+    height: 2px;
     background: transparent;
 }
 /* DropDown CSS End */
@@ -110,6 +115,7 @@ header .button button {
     font-weight: 700;
     color: #6278df;
     transition: all 0.6s;
+    margin-right: -45%;
 }
 header .button button:hover{
     border: 2px solid transparent;
@@ -118,3 +124,322 @@ header .button button:hover{
     box-shadow: 0px 0px 25px 1px rgba(98,120,223,0.67);
 }  
 /* Header CSS End*/
+/* Banner CSS Start */
+.banner {
+    background-image: url("https://i.ibb.co/TLSvcGz/mbr-4.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .4;
+    z-index: -1;
+}
+.banner h4 {
+    font-size: 25.6px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-bottom: .5rem;
+}
+.banner h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.1;
+    padding-bottom: 0.5rem;
+    padding-top: 2rem;
+}
+.banner a {
+    display: inline-block;
+    color: #7d7d7d;
+    text-decoration: none;
+    background: #fcfcfc;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 6px;
+    margin: 25px 10px;
+    border: 1px solid #7d7d7d;
+    transition: all 0.6s;
+}
+.banner a:hover{
+    color: #fff;
+    background: #6278df;
+    border: 1px solid #6278df;
+}
+/* Banner CSS End */
+/* Banner Down CSS Start */
+.banner-down {
+    background: #f7f9ff;
+    padding: 90px 0;
+}
+.banner-down .video{
+    width: 47%;
+}
+.banner-down .content-1{
+    width: 47%;
+}
+.banner-down .content-1 h1 {
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+.banner-down .content-1 p {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    color: #767676;
+}
+/* Banner Down CSS End */
+/* Service CSS Start */
+.service {
+    padding-top: 85px;
+}
+.service h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.service p {
+    color: #767676;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+}
+.service .box {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    width: 30%;
+    padding: 50px;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.6s;
+}
+.service .box:hover{
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 20%);
+}
+.service .box:hover h4{
+    color: #6278df;
+}
+.service .box:hover p{
+    color: #6278df;
+}
+.service .box span i {
+    font-size: 3rem;
+    color: #6278df;
+    margin-bottom: 5%;
+    font-weight: 300;
+}
+.service .box h4 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.service .box p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #767676;
+}
+.service .box::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 4px;
+    background: #6278df;
+    border-radius: 0 0 5px 5px;
+    transition: all 0.6s;
+}
+.service .box:hover::after{
+    width: 100%;
+    left: 0;
+}
+/* Service CSS End */
+/* Title CSS Start */
+.title {
+    background: #fff;
+    padding: 4% 0;
+}
+.title h1 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.4;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+}
+.title .title-box .box{
+    display: inline-block;
+    width: 23% !important;
+    overflow: hidden;
+  
+    /* margin-right: 1%;
+    height: 200px; */
+}
+.title .title-box .box img {
+    width: 95%;
+    border-radius: 4px;
+}
+ .box img{
+    transition: all 0.6s;
+}
+ .box1 img:hover{
+    transform: scale(1.1);
+}
+.box2 img:hover{
+    transform: rotate(360deg);
+}
+.box3 img:hover{
+    transform: rotate(25deg) ;
+}
+.box4 img:hover{
+    transform: rotate(5deg) scale(1.1);
+}
+/* Title CSS End */
+/* Newsletter CSS Start */
+.newsletter{
+    background: #f7f9ff;
+    padding: 7% 0;
+}
+.newsletter h4{
+    color: #767676;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding-bottom: 1rem;
+}
+.newsletter h1 {
+    font-size: 2.8rem;
+    line-height: 1.4;
+    font-weight: 400;
+    padding-bottom: 2rem;
+}
+.newsletter form input.email {
+    width: 50%;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    border-bottom: 2px solid #6278df;
+}
+.newsletter form input.email:focus{
+    outline: none;
+}
+.newsletter form input.submit {
+    width: 15%;
+    padding: 10px;
+    border: none;
+    font-weight: 600;
+    background: #6278df;
+    margin-left: -5px;
+    border: 2px solid transparent;
+    transition: all 0.6s;
+    color: #fff;
+}
+.newsletter form input.submit:hover{
+    background: #fff;
+    border: 2px solid #6278df;
+    color:#6278df;
+}
+/* Newsletter CSS End */
+/* Contact CSS Start */
+.contact{
+    padding: 100px 0;
+}
+.contact h1 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.contact p {
+    width: 600px;
+    color: #767676;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 300;
+    padding: 31px 0;
+    margin: 0 auto;
+}
+.contact input {
+    width: 50%;
+    padding: 7px 10px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    border: none;
+    border-bottom: 2px solid #6278df;
+}
+.contact input:focus {
+    outline: none;
+}
+.contact textarea {
+    width: 50%;
+    border: 2px solid #6278df;
+    padding: 35px 10px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.contact textarea:focus {
+    outline: none;
+}
+.contact .btn {
+    border: none;
+    background: #6278df;
+    width: 15%;
+    padding: 15px 0;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.6s;
+    position: relative;
+    border-radius: 5px;
+}
+.contact .btn:hover{
+    background: #fff;
+    color: #6278df;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+
+}
+.contact .btn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 3px;
+    width: 0;
+    background: #6278df;
+    border-radius: 0 0 5px 5px;
+    transition: all 0.6s;
+}
+.contact .btn:hover::after{
+    width: 100%;
+    left: 0;
+}
+/* Contact CSS End */
+/* Footer CSS Start */
+footer{
+    padding: 15px 0;
+}
+footer p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #000;
+    margin: 0;
+    
+}
+footer p span{
+    color: #465052;
+    transition: all 0.6s;
+}
+footer p span:hover{
+    color: #6278df;
+}
+/* Footer CSS End */
