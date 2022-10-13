@@ -52,7 +52,7 @@ header ul li a::after {
     content: "";
     position: absolute;
     bottom: 28px;
-    right: 0;
+    right:0;
     width: 0;
     height: 2px;
     background: #6278df;
@@ -249,6 +249,22 @@ header .button button:hover{
     font-weight: 300;
     color: #767676;
 }
+.service .box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 4px;
+    background: #6278df;
+    border-radius:5px 5px 0 0;
+    transition: all 0.6s;
+}
+.service .box:hover::before{
+    width: 100%;
+    left: 0;
+   
+}
 .service .box::after{
     content: "";
     position: absolute;
@@ -263,6 +279,7 @@ header .button button:hover{
 .service .box:hover::after{
     width: 100%;
     left: 0;
+    
 }
 /* Service CSS End */
 /* Title CSS Start */
@@ -360,7 +377,7 @@ header .button button:hover{
     line-height: 1.2;
 }
 .contact p {
-    width: 600px;
+    
     color: #767676;
     font-size: 1.3rem;
     line-height: 1.5;
@@ -408,6 +425,22 @@ header .button button:hover{
     
 
 }
+.contact .btn::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 0;
+    height: 3px;
+    width: 0;
+    background: #6278df;
+    border-radius: 5px 5px 0 0;
+    transition: all 0.6s;
+}
+.contact .btn:hover::before{
+    width: 100%;
+    left: 0;
+    
+}
 .contact .btn::after {
     content: "";
     position: absolute;
@@ -422,6 +455,7 @@ header .button button:hover{
 .contact .btn:hover::after{
     width: 100%;
     left: 0;
+    
 }
 /* Contact CSS End */
 /* Footer CSS Start */
@@ -435,11 +469,12 @@ footer p {
     margin: 0;
     
 }
-footer p span{
-    color: #465052;
+footer p span a {
+    color: #465052 !important;
     transition: all 0.6s;
+    text-decoration: none;
 }
-footer p span:hover{
-    color: #6278df;
+footer p span a:hover{
+    color: #6278df !important;
 }
 /* Footer CSS End */

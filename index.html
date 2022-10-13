@@ -20,14 +20,14 @@
                 <a href="#"><img src="https://sorobindu.com/wp-content/uploads/2022/03/Sorobindu-logo-1.png" alt=""></a>
             </div>
                 <ul class="menu d-inline-block m-0">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a>
+                    <li><a href="#about">Home</a></li>
+                    <li><a href="#banner">About</a>
                     <ul>
                         <li><a href="#"> Health Tracker App</a></li>
                         <li><a href="#">Time Planner App</a></li>
                     </ul>
                     </li>
-                    <li><a href="#">Service</a>
+                    <li><a href="#service">Service</a>
                     <!-- DropDown Section Start -->
                     <ul>
                         <li><a href="#">Headers</a></li>
@@ -38,9 +38,9 @@
                     </ul>
                     <!-- DropDown Section End -->
                     </li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             <div class="button d-inline-block">
                 <button>Bye Now</button>
@@ -49,7 +49,7 @@
     </header>
     <!-- Header Section End -->
     <!-- Banner Section Start -->
-    <section class="banner text-center text-white">
+    <section class="banner text-center text-white" id="about">
         <div class="fixed-width">
             <h4>Created to save your time</h4>
             <h2>Time Planner App</h2>
@@ -59,7 +59,7 @@
     </section>
     <!-- Banner Section End -->
     <!-- Banner Down Section Start -->
-    <section class="banner-down">
+    <section class="banner-down" id="banner">
         <div class="fixed-width">
             <div class="video d-inline-block">
                 <iframe width="575" height="342" src="https://www.youtube.com/embed/7MnP25BL-wI" title="Young Man Using Smart Phone I Homem Navegando no Celular" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -72,7 +72,7 @@
     </section>
     <!-- Banner Down Section End -->
     <!-- Service Section Start -->
-    <section class="service text-center">
+    <section class="service text-center" id="service">
         <div class="fixed-width">
             <h1>Learn more about our application</h1>
             <p>Track time without wasting a second</p>
@@ -113,7 +113,7 @@
     </section>
     <!-- Service Section End -->
     <!-- Title Section Start -->
-    <section class="title text-center">
+    <section class="title text-center" id="portfolio">
         <div class="fixed-width">
             <h1>Our team is constantly trying for you</h1>
             <div class="title-box">
@@ -134,7 +134,7 @@
     </section>
     <!-- Title Section End -->
     <!-- newsletter Section Start -->
-    <section class="newsletter text-center">
+    <section class="newsletter text-center" id="blog">
         <div class="fixed-width">
             <h4>Keep up to date with the latest updates</h4>
             <h1>Subscribe to our newsletter</h1>
@@ -148,16 +148,17 @@
     </section>
     <!-- newsletter Section End -->
     <!-- Contact CSS Start -->
-    <section class="contact text-center">
+    <section class="contact text-center" id="contact">
         <div class="fixed-width">
             <h1> Contact us</h1>
             <p>Contact us if you have any questions and we will contact you. We appreciate user feedback and be sure to take into account your wishes.</p>
             <div class="form-2">
-                <form action="#">
-                    <input type="text" name="" id="" placeholder="Type Your Name"> 
-                    <input type="email" name="" id="" placeholder="Type Your Email">
-                    <input type="tel" name="" id="" placeholder="Type Your Number"> <br>
-                    <textarea name="" id="" cols="" rows="" placeholder="Type Your Message"></textarea> <br>
+                <form action="https://formspree.io/f/xoqreler"
+                method="POST">
+                    <input type="text" name="Name" id="" placeholder="Type Your Name"> 
+                    <input type="email" name="Email" id="" placeholder="Type Your Email">
+                    <input type="tel" name="Number" id="" placeholder="Type Your Number"> <br>
+                    <textarea name="Messages" id="" cols="" rows="" placeholder="Type Your Messages"></textarea> <br>
                     <button class="btn" type="submit">Submit</button>
                 </form>
             </div>
@@ -167,7 +168,7 @@
     <!-- Footer Section Start -->
     <footer class="text-center">
         <div class="fixed-width">
-            <p>&copy Copyright 2022 <span>Developer-Mokhlesur</span> - All Rights Reserved</p>
+            <p>&copy Copyright 2022 <span><a target="_blank" href="https://www.facebook.com/developer.mokhlesur">Developer-Mokhlesur</a></span> - All Rights Reserved</p>
         </div>
     </footer>
     <!-- Footer Section End -->
